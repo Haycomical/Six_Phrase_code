@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Sharing Web App</title>
+    <style>
+            
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 10;
+            background-color: #ffffff;
+        }
+
+        header {
+            background-color: #84238b;
+            color: white;
+            padding: 10px 0;
+            width: 400px;
+            margin-left: 540px;
+            justify-items: center;
+            text-align: center;
+        }
+
+        a {
+            color: aliceblue;
+            display: contents;
+        }
+
+        main {
+            display: flex;
+            justify-content:center;
+            align-items: normal;
+            min-height: calc(100vh - 100px);
+            padding: 20px;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+           
+        }
+
+        .container:hover {
+            box-shadow: 10px 10px 15px 0px #84238b;
+        }
+
+        h1 {
+            margin: 10px;
+            justify-content: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        input[type="file"] {
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #b01f93;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #bec6be;
+            color: #000000;
+        }
+
+        footer {
+            background-color: #662e64;
+            color: rgb(255, 255, 255);
+            text-align: center;align-items: center;
+            padding: 10px;
+            position: absolute;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>File Sharing Web App</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Upload Your File</h2>
+            <form action="/upload" method="post" enctype="multipart/form-data">
+                <input type="file" name="file" id="file" required>
+                <button type="submit">Upload</button>
+            </form>
+        </div>
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h1>Footer</h1>
+            </div>
+            <div>
+                <a href="www.google.com">&commat;twitter</a>
+                <a href="www.google.com">&middot;Linkedin</a>
+                <a href="www.google.com">&middot;instagram↗</a>
+
+            </div>
+
+            
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>(┬┬﹏┬┬)</p>
+        </div>
+    </footer>
+ 
+</body>
+
+</html>
